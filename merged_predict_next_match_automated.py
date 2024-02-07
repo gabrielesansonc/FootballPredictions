@@ -647,7 +647,7 @@ def plot_donut_chart(home_team, away_team, home_percentage, draw_percentage, awa
     colors = ['#FFC0C0', '#808080', '#C0C0FF']  # Corresponding to "Away Win", "Draw", "Home Win"
 
     # Reorder percentages to match the desired outcome order
-    percentages = [round(away_percentage), round(draw_percentage), round(home_percentage)]
+    percentages = [away_percentage, draw_percentage, home_percentage]
 
     # Create the donut chart
     fig = go.Figure(data=[go.Pie(labels=outcome_labels,
